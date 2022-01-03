@@ -1,0 +1,21 @@
+:root{
+/* Color styles */
+--color-fond: rgba(255, 255, 255, 1);
+--color-fond-titre: rgba(0, 0, 0, 1);
+--color-texte: rgba(152, 152, 154, 1);
+--color-mise_en_evidence: rgba(190, 61, 42, 1);
+--color-banniere: rgba(243, 243, 243, 1);
+
+/* Text-size styles */
+/* base size: texte (16px) */
+--size-titre: 2.25rem;
+--size-chapo: 1.38rem;
+--size-texte: 1rem;
+--size-citation: 1.12rem;
+--size-bouton: 1.5rem;
+
+/* Font family style */
+--font-titre: 'Bentham', serif;
+--font-texte: 'Asap', sans-serif;
+
+}
