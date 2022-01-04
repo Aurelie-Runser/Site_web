@@ -23,13 +23,16 @@ body{
 /* règles typographiques générales des titres */
 h1,
 h2 {
+    margin: 4vh 10vw 4vh 0;
+    padding: 5%;
+    font-size: var(--size-titre);
     font-family: var(--font-serif);
     color: var(--color-claire);
     background-color: var(--color-fonce);
 }
 
 .titre_accueil{
-    margin: 10%;
+    margin: 10% 0;
     text-align: center;
     text-transform: uppercase;
     color: var(--color-mise_en_evidence);
@@ -41,12 +44,17 @@ p{
     margin: 0 7vw;
 }
 
+.paragraphe{
+    margin-bottom: 3vh;
+}
+
 .lien{
     color: var(--color-mise_en_evidence);
 }
 
 /* mise en forme des citations */
 blockquote{
+    margin: 7vw;
     font-size: var(--size-citation);
     font-family: var(--font-serif);
     color: var(--color-fonce);
@@ -80,4 +88,10 @@ button {
 a{
     color: var(--color-texte);
     text-decoration: none;
+}
+
+.video{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }

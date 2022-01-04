@@ -2,3 +2,21 @@ img{
     max-width: 100%;
     height: auto;
 }
+
+.img__persepolis{
+    margin-top: 2vh;
+    margin-bottom: -5vh;
+    width: 30vw;
+}
+
+.img__marjana{
+    width: 50vw;
+    float: right;
+    margin: 1vh 0;
+}
+
+.img__la_muette{
+    width: 100%;
+    padding-left: 55%;
+    padding-right: 5%;
+}

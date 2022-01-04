@@ -1,0 +1,5 @@
+.chapo{
+    font-size: var(--size-chapo);
+    color: var(--color-fonce);
+    font-family: var(--font-serif);
+}
