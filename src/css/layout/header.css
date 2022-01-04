@@ -1,0 +1,24 @@
+/* mise en place et forme de la banniere */
+.header{
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 1vh 2vw;
+    align-content: flex-start;
+    justify-content: space-between;
+    background-color: var(--color-banniere);
+}
+
+.header__logo{
+    width: 25vw;
+    height: auto;
+}
+
+.menu{
+    visibility: hidden;
+    
+}
