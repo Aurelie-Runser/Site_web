@@ -1,7 +1,46 @@
-.titre{
-    font-family: var(--font-titre)
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.texte{
-    font-family: var(--font-texte)
+body{
+    font-family: var(--font-texte);
+    font-size: var(--size-texte);
+    line-height: 1.6;
+    color: var(--color-texte);
+    background-color: var(--color-fond);
+}
+
+/* Les règles typographiques générales des titres */
+h1,
+h2 {
+    font-family: var(--font-titre);
+    color: var(--color-fond);
+    background-color: var(--color-fond-titre);
+}
+
+/* permet d'annuler la mise en forme des bouton qu'applique le navigateur. */
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+  
+/* Pour enlever l'apparence par défaut des listes */
+    .list-unstyled {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* supression des décorations et des couleurs des liens */
+a{
+    color: var(--color-texte);
+    text-decoration: none;
 }
