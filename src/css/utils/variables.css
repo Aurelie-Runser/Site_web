@@ -1,7 +1,7 @@
 :root{
 /* Color styles */
---color-fond: rgba(255, 255, 255, 1);
---color-fond-titre: rgba(0, 0, 0, 1);
+--color-claire: rgba(255, 255, 255, 1);
+--color-fonce: rgba(0, 0, 0, 1);
 --color-texte: rgba(152, 152, 154, 1);
 --color-mise_en_evidence: rgba(190, 61, 42, 1);
 --color-banniere: rgba(243, 243, 243, 1);

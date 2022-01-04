@@ -11,15 +11,15 @@ body{
     font-size: var(--size-texte);
     line-height: auto;
     color: var(--color-texte);
-    background-color: var(--color-fond);
+    background-color: var(--color-claire);
 }
 
 /* Les règles typographiques générales des titres */
 h1,
 h2 {
     font-family: var(--font-serif);
-    color: var(--color-fond);
-    background-color: var(--color-fond-titre);
+    color: var(--color-claire);
+    background-color: var(--color-fonce);
 }
 
 .titre_accueil{
@@ -27,7 +27,7 @@ h2 {
     text-align: center;
     text-transform: uppercase;
     color: var(--color-mise_en_evidence);
-    background-color: var(--color-fond);
+    background-color: var(--color-claire);
 }
 
 p{
@@ -37,7 +37,7 @@ p{
 blockquote{
     font-size: var(--size-citation);
     font-family: var(--font-serif);
-    color: var(--color-fond-titre);
+    color: var(--color-fonce);
 }
 
 /* permet d'annuler la mise en forme des bouton qu'applique le navigateur. */
