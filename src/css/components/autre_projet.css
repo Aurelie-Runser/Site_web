@@ -1,0 +1,31 @@
+/* marge exteren des listes */
+.liste_ap{
+    margin: 0 7vw;
+}
+
+/* mise en place de la liste à droite de l'écran */
+.liste-right{
+    float: right;
+}
+
+/* mise à l'echelle des items */
+.liste_ap__items{
+    width: 37vw;
+    margin-bottom: 5px;
+}
+
+/* hauteur des items avec image */
+.liste_ap__items .liste_ap__figure{
+    height: 33vh;
+}
+
+/* hauteur des items sans image */
+.liste_ap__items p{
+    height: 17vh;
+}
+
+/* supression des marges des textes pour que le texte ai la meme largeur que sur les items avec image */
+.liste_ap__texte{
+    margin: 0;
+}
+

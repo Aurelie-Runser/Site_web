@@ -9,6 +9,7 @@
 /* Component */
 @import url("components/menu.css");
 @import url("components/tweets.css");
+@import url("components/autre_projet.css");
 
 /* Layout */
 @import url("layout/header.css");
