@@ -7,9 +7,9 @@
 }
 
 body{
-    font-family: var(--font-texte);
+    font-family: var(--font-sans-serif);
     font-size: var(--size-texte);
-    line-height: 1.6;
+    line-height: auto;
     color: var(--color-texte);
     background-color: var(--color-fond);
 }
@@ -17,9 +17,27 @@ body{
 /* Les règles typographiques générales des titres */
 h1,
 h2 {
-    font-family: var(--font-titre);
+    font-family: var(--font-serif);
     color: var(--color-fond);
     background-color: var(--color-fond-titre);
+}
+
+.titre_accueil{
+    margin: 10%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-mise_en_evidence);
+    background-color: var(--color-fond);
+}
+
+p{
+    margin: 0 7vw;
+}
+
+blockquote{
+    font-size: var(--size-citation);
+    font-family: var(--font-serif);
+    color: var(--color-fond-titre);
 }
 
 /* permet d'annuler la mise en forme des bouton qu'applique le navigateur. */
