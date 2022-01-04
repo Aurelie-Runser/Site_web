@@ -1,0 +1,48 @@
+/* suppression de la mise en forme basique de la liste */
+input[type="text"],
+input[type="email"],
+textarea{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* suppression du contour lors du focus */
+input:focus,
+textarea:focus{
+    outline: none;
+}
+
+/* mise en forme des champs */
+input[type="text"],
+input[type="email"],
+textarea{
+    display: block;
+    width: 80%;
+    margin: 5vh auto;
+    padding-bottom: 2vh;
+    border: none;
+    border-bottom: 2px solid var(--color-texte);
+    color: var(--color-texte);
+    font-size: var(--size-citation);
+    font-family: var(--font-sans-serif);
+}
+
+/* mise en forme specialeau textarea */
+textarea{
+    margin-top: 7vh;
+    padding: 1vh;
+    border-left: 2px solid var(--color-texte);
+    font-size: var(--size-texte);
+}
+
+/* mise en forme du bouton d'envoie */
+input[type="submit"]{
+    margin: 2vh 10vw 0;
+    padding: 2vh;
+    border: 2px solid var(--color-fonce);
+    background-color: var(--color-claire);
+    color: var(--color-text);
+    font-size: var(--size-bouton);
+    font-family: var(--font-sans-serif);
+}

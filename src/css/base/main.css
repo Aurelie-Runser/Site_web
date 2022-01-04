@@ -22,13 +22,18 @@ body{
 
 /* règles typographiques générales des titres */
 h1,
-h2 {
+h2{
     margin: 4vh 10vw 4vh 0;
     padding: 5%;
     font-size: var(--size-titre);
     font-family: var(--font-serif);
     color: var(--color-claire);
     background-color: var(--color-fonce);
+}
+
+h3{
+    margin-left: 10vw;
+    font-size: var(--size-bouton);
 }
 
 .titre_accueil{
