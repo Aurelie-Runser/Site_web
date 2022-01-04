@@ -54,6 +54,7 @@
                 width="auto"
                 x-show="img1"
                 x-ref="banniere_img_1"
+                x-transition.in
                 x-on:click="img1=false;
                             img2=true;"/>
             
@@ -63,6 +64,7 @@
                 width="auto"
                 x-show="img2"
                 x-ref="banniere_img_2"
+                x-transition.in
                 x-on:click="img1=true;
                             img2=false;"/>
         </div>
