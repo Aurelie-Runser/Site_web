@@ -6,6 +6,12 @@
     padding: 0;
 }
 
+/* le scroll est supprimer (utiliser lorsque le menu est ouvert) */
+.noscroll,
+.noscroll body {
+  overflow: hidden;
+}
+
 body{
     font-family: var(--font-sans-serif);
     font-size: var(--size-texte);
@@ -35,11 +41,22 @@ p{
     margin: 0 7vw;
 }
 
+.lien{
+    color: var(--color-mise_en_evidence);
+}
+
 /* mise en forme des citations */
 blockquote{
     font-size: var(--size-citation);
     font-family: var(--font-serif);
     color: var(--color-fonce);
+}
+
+/* mise en forme de l'intro sur l'accueil */
+.intro{
+    margin: 5vh 6vw;
+    text-align: center;
+    font-size: var(--size-chapo);
 }
 
 /* permet d'annuler la mise en forme des bouton qu'applique le navigateur. */
@@ -63,10 +80,4 @@ button {
 a{
     color: var(--color-texte);
     text-decoration: none;
-}
-
-/* le scroll est supprimer (utiliser lorsque le menu est ouvert) */
-.noscroll,
-.noscroll body {
-  overflow: hidden;
 }

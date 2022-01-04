@@ -1,0 +1,18 @@
+.tweet{
+    height: 15vh;
+    padding: 0;
+    margin-top: 8vh;
+    margin-right: 8vw;
+    border-bottom: 1px solid var(--color-fonce);
+}
+
+.tweet__img{
+    float: left;
+    height: 100%;
+    margin-right: 5vw;
+}
+
+.tweet__text{
+    margin: 0;
+}
+
