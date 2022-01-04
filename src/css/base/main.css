@@ -14,7 +14,7 @@ body{
     background-color: var(--color-claire);
 }
 
-/* Les règles typographiques générales des titres */
+/* règles typographiques générales des titres */
 h1,
 h2 {
     font-family: var(--font-serif);
@@ -30,10 +30,12 @@ h2 {
     background-color: var(--color-claire);
 }
 
+/* mise en forme des textes */
 p{
     margin: 0 7vw;
 }
 
+/* mise en forme des citations */
 blockquote{
     font-size: var(--size-citation);
     font-family: var(--font-serif);
@@ -50,7 +52,7 @@ button {
     cursor: pointer;
 }
   
-/* Pour enlever l'apparence par défaut des listes */
+/* enleve l'apparence par défaut des listes */
     .list-unstyled {
     list-style: none;
     padding: 0;

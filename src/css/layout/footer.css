@@ -1,3 +1,4 @@
+/* mise en forme du footer */
 .footer{
     display: flex;
     flex-direction: column;
@@ -7,6 +8,7 @@
     background-color: var(--color-fonce);
 }
 
+/* mise en forme du texte du footer */
 .footer__texte{
     text-align: center;
     margin-top: 1vh;
