@@ -1,0 +1,68 @@
+.menu{
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    top: 0; bottom: 0;
+    left: 0; right : 0;
+    background-color: var(--color-claire);
+    transition: all .4s ease-in-out;
+}
+
+/* Menu ouvert */
+.menu--open {
+    visibility: visible;
+    opacity: 100%;
+}
+
+
+/* BOUTON MENU */
+
+/* mise en place du bouton menu */
+.menu-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 2vh;
+}
+
+/* dessin des 3 traits du menu burger */
+.menu-btn__bar-top,
+.menu-btn__bar-milieu,
+.menu-btn__bar-bottom{
+    margin-bottom: 7px;
+    width: 35px;
+    font-size: var(--size-bouton);
+    border-top: 5px solid var(--color-fonce);
+    border-radius: 30px;
+    transition: all .5s;
+}
+
+/* rotation des traits */
+.menu-btn--open .menu-btn__bar-milieu{
+    width: 40px;
+    transform: rotate(135deg);
+}
+
+.menu-btn--open .menu-btn__bar-top,
+.menu-btn--open .menu-btn__bar-bottom{
+    width: 40px;
+    transform: rotate(225deg);
+}
+
+/* mise à la bonne hauteur des traits*/
+.menu-btn--open .menu-btn__bar-top{
+    margin-top: 15px;
+}
+
+.menu-btn--open .menu-btn__bar-milieu{
+    margin-top: -13px;
+}
+
+.menu-btn--open .menu-btn__bar-bottom{
+    margin-top: -13px;
+    opacity: 0;
+}

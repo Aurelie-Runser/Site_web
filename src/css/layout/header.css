@@ -8,7 +8,7 @@
     width: 100%;
     height: auto;
     padding: 1vh 2vw;
-    align-content: flex-start;
+    align-content: center;
     justify-content: space-between;
     background-color: var(--color-banniere);
 }
@@ -16,9 +16,4 @@
 .header__logo{
     width: 25vw;
     height: auto;
-}
-
-.menu{
-    visibility: hidden;
-    
 }

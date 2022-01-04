@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
     <title>DESTINS D’IRAN</title>
 </head>
 <body>
@@ -17,10 +18,17 @@
             </div>
                 
             <div>
-                <button>bouton</button>
+                <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                @pointerdown="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
+                    <div class="menu-btn__bar-top"></div>
+                    <div class="menu-btn__bar-milieu"></div>
+                    <div class="menu-btn__bar-bottom"></div>
+                </button>
             </div>
         </div>
-        <nav>
+
+        <nav class="menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
             <ul>
                 <li><a href="/">Accueil</a></li>
                 <li><a href="article_persepolis.html">Persepolis</a></li>
@@ -30,6 +38,7 @@
                 <li><a href="autres_projets">Autres projets</a></li>
             </ul>
         </nav>
+            
     </header>
 
     <main>
