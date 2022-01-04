@@ -9,6 +9,7 @@
 /* Component */
 
 /* Layout */
+@import url("layout/footer.css");
 
 /* Utils */
 @import url("utils/variables.css");
