@@ -46,7 +46,26 @@
         </div>
 
         <h1 class="titre_accueil">Destins d'Iran</h1>
-        <img src="public/img/images/banniere_accueil.webp" alt="Bannière de l'accueil">
+
+        <div x-data="{ img1: true, img2: false }">
+            <img id="banniere_img_1"
+                src="public/img/images/banniere_img1.webp"
+                alt="Bannière de l'accueil"
+                width="auto"
+                x-show="img1"
+                x-ref="banniere_img_1"
+                x-on:click="img1=false;
+                            img2=true;"/>
+            
+            <img id="banniere_img_2"
+                src="public/img/images/banniere_img2.webp"
+                alt="Bannière de l'accueil"
+                width="auto"
+                x-show="img2"
+                x-ref="banniere_img_2"
+                x-on:click="img1=true;
+                            img2=false;"/>
+        </div>
 
         <blockquote class="intro">« Comment se fait-il que moi, en tant que femme je ne puisse rien éprouver en regardant les messieurs moulés de partout mais qu’eux en tant qu’hommes puissent s’exiter sur mes cinq centimètres de cagoule en moins »</blockquote>
 
