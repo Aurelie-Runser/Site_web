@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
-    <title>DESTINS D’IRAN</title>
+    <title>Destins d’Iran</title>
 </head>
 <body>
     <header>
@@ -29,19 +29,23 @@
         </div>
 
         <nav class="menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
-            <ul>
-                <li><a href="/">Accueil</a></li>
-                <li><a href="article_persepolis.html">Persepolis</a></li>
-                <li><a href="article_marjane_satrapi">Marjane Satrapi</a></li>
-                <li><a href="article_la_muette">La muette</a></li>
-                <li><a href="contact">Contact</a></li>
-                <li><a href="autres_projets">Autres projets</a></li>
+            <ul class="menu__list list-unstyled">
+                <li class="menu__items"><a class="menu__link" href="/">Accueil</a></li>
+                <li class="menu__items"><a class="menu__link" href="article_persepolis.html">Persepolis</a></li>
+                <li class="menu__items"><a class="menu__link" href="article_marjane_satrapi">Marjane Satrapi</a></li>
+                <li class="menu__items"><a class="menu__link" href="article_la_muette">La muette</a></li>
+                <li class="menu__items"><a class="menu__link" href="contact">Contact</a></li>
+                <li class="menu__items"><a class="menu__link" href="autres_projets">Autres projets</a></li>
             </ul>
         </nav>
             
     </header>
 
     <main>
+        <div class="cache">
+            <img class="header__logo" src="public/img/icons/logo.svg" alt="Logo">
+        </div>
+
         <h1 class="titre_accueil">Destins d'Iran</h1>
         <img src="public/img/images/banniere_accueil.webp" alt="Bannière de l'accueil">
 
