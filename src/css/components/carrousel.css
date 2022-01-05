@@ -1,4 +1,5 @@
-.carrouselF{
+.carrouselF,
+.carrouselL{
     z-index: 0;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -13,13 +14,19 @@
 	overflow: hidden;
 }
 
-.imagesF{
-    width: 393px;
+.carrouselL{
+    grid-auto-rows: minmax(512px, auto);
+}
+
+.imagesF,
+.imagesL{
+    width: auto;
 	height: auto;
 	left:0;
 }
 
-.imageF{
+.imageF,
+.imageL{
 	position: absolute;
 	top:0;
 	left:0;

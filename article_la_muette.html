@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="src/js/fonctions.js"></script>
     <title>Destins d'Iran - La Muette</title>
 </head>
 <body>
@@ -73,11 +75,16 @@
         <div>
             <h2>Livres associés</h2>
 
-            <div>
-                <img src="public/img/carousel/livre-la_derniere_sceance.webp" alt="Couverture du livre 'La Dernière Scéance'">
-                <img src="public/img/carousel/livre-bas_les_voiles.webp" alt="Couverture du livre 'Bas les voiles !'">
-                <img src="public/img/carousel/livre-ne_negociez_pas_avec_le_regime_iranien.webp" alt="Couverture du livre 'Ne négociez pas avec le régime iranien'">
-                <img src="public/img/carousel/livre-les_putes_voilees_n_iront_jamais_au_Paradis.webp" alt="Couverture du livre 'Les putes voilées n'iront jamais au Paraids !'">
+            <div class="carrouselL">
+                <div class="imagesL">
+                    <img  id="img1L" class="imageL" src="public/img/carrousel/livre-la_derniere_sceance.webp" alt="Couverture du livre 'La Dernière Scéance'">
+                    <img  id="img1L" class="imageL" src="public/img/carrousel/livre-bas_les_voiles.webp" alt="Couverture du livre 'Bas les voiles !'">
+                    <img  id="img1L" class="imageL" src="public/img/carrousel/livre-ne_negociez_pas_avec_le_regime_iranien.webp" alt="Couverture du livre 'Ne négociez pas avec le régime iranien'">
+                    <img  id="img1L" class="imageL" src="public/img/carrousel/livre-les_putes_voilees_n_iront_jamais_au_Paradis.webp" alt="Couverture du livre 'Les putes voilées n'iront jamais au Paraids !'">
+                </div>
+                <script>        
+                    carrouselLivres();       
+                </script>
             </div>
         </div>
     </main>
