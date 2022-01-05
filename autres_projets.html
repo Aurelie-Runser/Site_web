@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="src/js/fonctions.js"></script>
     <title>Destins d'Iran - Autres projets</title>
 </head>
 <body>
@@ -51,109 +53,82 @@
             <ul class="liste_ap list-unstyled">
                 <li id="liste_img-right" class="liste-right">
 
-                    <div class="liste_ap__items" x-data="{Image: false}">
-                        <figure class="liste_ap__figure">
-                            <img class="liste_ap__img"
-                                 src="public/img/autres_projets/maximus_la_vengeance_par_les_jeux_du_cirque.webp"
-                                 alt="Logo du projet 'Maximus, la vengeance par les jeux du cirque' de Rémi Vivant"
-                                 x-on:click="Image = !Image;">
+                <div class="projet">
+                        <div class="texte" id="texte1">
+                            <p>« Maximus, la vengeance par les jeux du cirque »</p>
+                            <p>Rémi Vivant</p>
+                        </div>
+                        <div class="image"
+                            x-on:mouseover="glisserCote(texte1);"
+                            x-on:mouseleave="glisserDessous();">
+                            <img src="public/img/autres_projets/maximus_la_vengeance_par_les_jeux_du_cirque.webp">
+                        </div>
+                </div>
 
-                            <figcaption class="liste_ap__texte"
-                                    x-show="Image"
-                                    x-transition.in>
-                                    <a href="#">
-                                        « Maximus, la vengeance par les jeux du cirque » <br> Rémi Vivant
-                                    </a>
-                            </figcaption>
-                        </figure>
+                <div class="projet">
+                    <div class="texte" id="texte2">
+                        <p>« Hommes et nature »</p>
+                        <p>Marie Blanc</p>
                     </div>
-
-                    <div class="liste_ap__items" x-data="{Image: false}">
-                        <figure class="liste_ap__figure">
-                            <img class="liste_ap__img" 
-                                 src="public/img/autres_projets/hommes_et_nature.webp"
-                                 alt="Logo du projet 'Hommes et nature' de Marie Blanc"
-                                 x-on:click="Image = !Image;">
-
-                            <figcaption class="liste_ap__texte"
-                                        x-show="Image"
-                                        x-transition.in>
-                                <a href="#">
-                                    « Hommes et nature » <br> Marie Blanc
-                                </a>
-                            </figcaption>
-                        </figure>
+                    <div class="image"
+                        x-on:mouseover="glisserCote(texte2);"
+                        x-on:mouseleave="glisserDessous();">
+                        <img src="public/img/autres_projets/hommes_et_nature.webp">
                     </div>
+                </div>
 
-                    <div class="liste_ap__items" x-data="{Image: false}">
-                        <figure class="liste_ap__figure">
-                            <img class="liste_ap__img" 
-                                 src="public/img/autres_projets/adventuria.webp"
-                                 alt="Logo du projet 'Adventuria' de Emilien Poulet"
-                                 x-on:click="Image = !Image;">
-
-                            <figcaption class="liste_ap__texte"
-                                        x-show="Image"
-                                        x-transition.in>
-                                <a href="#">
-                                    « Adventuria » <br> Emilien Poulet
-                                </a>
-                            </figcaption>        
-                        </figure>
+                <div class="projet">
+                    <div class="texte" id="texte3">
+                        <p>« Adventuria »</p>
+                        <p>Emilien Poulet</p>
                     </div>
+                    <div class="image"
+                        x-on:mouseover="glisserCote(texte3);"
+                        x-on:mouseleave="glisserDessous();">
+                        <img src="public/img/autres_projets/adventuria.webp">
+                    </div>
+                </div>
+
                 </li>
                 
                 <li>
-                    <div class="liste_ap__items" x-data="{Image: false}">
-                        <figure class="liste_ap__figure">
-                            <img class="liste_ap__img" 
-                                 src="public/img/autres_projets/l_esclavage_noirs_aux_etats-unis.webp"
-                                 alt="Logo du projet 'L'esclavage noirs aux &Eacute;tats-Unis' de Léo Blondin"
-                                 x-on:click="Image = !Image;">
 
-                            <figcaption class="liste_ap__texte"
-                                        x-show="Image"
-                                        x-transition.in>
-                                <a href="#">
-                                    « L’esclavage noirs aux États-Unis » <br> Léo Blondin
-                                </a>
-                            </figcaption>
-                        </figure>
+                    <div class="projet">
+                        <div class="texte" id="texte4">
+                            <p>« Adventuria »</p>
+                            <p>Emilien Poulet</p>
+                        </div>
+                        <div class="image"
+                            x-on:mouseover="glisserCote(texte4);"
+                            x-on:mouseleave="glisserDessous();">
+                            <img src="public/img/autres_projets/l_esclavage_noirs_aux_etats-unis.webp">
+                        </div>
                     </div>
-    
-                    <div class="liste_ap__items" x-data="{Image: false}">
-                        <figure class="liste_ap__figure">
-                            <img class="liste_ap__img" 
-                                 src="public/img/autres_projets/alice_entre_reve_et_folie.webp"
-                                 alt="Logo du projet 'Alice : Entre rêve et folie' de Adrien Gaborit"
-                                 x-on:click="Image = !Image;">
 
-                            <figcaption class="liste_ap__texte"
-                                        x-show="Image"
-                                        x-transition.in>
-                                <a href="#">
-                                    « Alice : Entre rêve et folie » <br> Adrien Gaborit
-                                </a>
-                            </figcaption>
-                        </figure>
+                    <div class="projet">
+                        <div class="texte" id="texte5">
+                            <p>« Alice : Entre rêve et folie »</p>
+                            <p>Adrien Gaborit</p>
+                        </div>
+                        <div class="image"
+                            x-on:mouseover="glisserCote(texte5);"
+                            x-on:mouseleave="glisserDessous();">
+                            <img src="public/img/autres_projets/alice_entre_reve_et_folie.webp">
+                        </div>
                     </div>
-    
-                    <div class="liste_ap__items" x-data="{Image: false}">
-                        <figure class="liste_ap__figure">
-                            <img class="liste_ap__img" 
-                                 src="public/img/autres_projets/toujours_plus.webp"
-                                 alt="Logo du projet 'Toujours plus.' de Baptiste Vivot"
-                                 x-on:click="Image = !Image;">
 
-                            <figcaption class="liste_ap__texte"
-                                        x-show="Image"
-                                        x-transition.in>
-                                <a href="#">
-                                    « Toujours plus. » <br> Baptiste Vivot
-                                </a>
-                            </figcaption>
-                        </figure>                        
+                    <div class="projet">
+                        <div class="texte" id="texte6">
+                            <p>« Toujours plus. »</p>
+                            <p>Baptiste Vivot</p>
+                        </div>
+                        <div class="image"
+                            x-on:mouseover="glisserCote(texte6);"
+                            x-on:mouseleave="glisserDessous();">
+                            <img src="public/img/autres_projets/toujours_plus.webp">
+                        </div>
                     </div>
+
                 </li>
 
             </ul>

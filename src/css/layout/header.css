@@ -1,7 +1,7 @@
 /* mise en place et forme de la banniere */
 .header{
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     display: flex;
     top: 0;
     left: 0;

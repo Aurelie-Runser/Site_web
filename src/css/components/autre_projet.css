@@ -8,6 +8,9 @@
     float: right;
 }
 
+
+/* MISE EN FORME DES ICONS SANS IMAGE */
+
 /* mise à l'echelle des items */
 .liste_ap__items{
     width: 37vw;
@@ -29,3 +32,37 @@
     margin: 0;
 }
 
+
+/* MISE EN FORME DES ICONS AVEC IMAGE */
+
+.projet {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	row-gap: 0px;
+	column-gap: 0px;
+	grid-auto-rows: minmax(100px, auto);
+    grid-column: 2;
+	grid-row: 2;
+	width: 41vw;
+	height: 40vh;
+	padding: 0px;
+	position: relative;
+	overflow: hidden;
+}
+
+.image {
+    width: 37vw;
+	position: relative;
+	z-index: 2;
+}
+
+.texte {
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	color: var(--color-texte);
+	background-color: rgba(255, 255, 255, 0.55);
+	top:0;
+	z-index: 1;
+    
+}

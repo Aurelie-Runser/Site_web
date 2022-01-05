@@ -73,3 +73,23 @@ function carrouselLivres() {
         }
     });
 }
+
+function glisserCote(texte) {
+    return anime({
+        targets: texte,
+        translateY: "37vw",
+        autoplay: false,
+        easing: "linear",
+        duration: 300,
+    }).play;
+}
+
+function glisserDessous() {
+	return anime({
+        targets: ".texte",
+        translateY: 0,
+        autoplay: false,
+        easing: "linear",
+        duration: 300,
+    }).play;
+}
