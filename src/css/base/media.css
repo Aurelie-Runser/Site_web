@@ -22,3 +22,9 @@ img{
     padding-left: 55%;
     padding-right: 5%;
 }
+
+.error_img{
+    display: block;
+    width: 80%;
+    margin: auto auto;
+}
