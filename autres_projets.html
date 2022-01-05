@@ -49,59 +49,89 @@
 
         <nav>
             <ul class="liste_ap list-unstyled">
-                <li class="liste-right">
-                    <div class="liste_ap__items">
+                <li id="liste_img-right" class="liste-right">
+
+                    <div class="liste_ap__items" x-data="{Image: false}">
                         <a href="#">
                             <figure class="liste_ap__figure">
-                                <img class="liste_ap__img" src="public/img/autres_projets/maximus_la_vengeance_par_les_jeux_du_cirque.webp" alt="Logo du projet 'Maximus, la vengeance par les jeux du cirque' de Rémi Vivant">
-                                <figcaption class="liste_ap__texte">« Maximus, la vengeance par les jeux du cirque » <br> Rémi Vivant</figcaption>
+                                <img class="liste_ap__img"
+                                     src="public/img/autres_projets/maximus_la_vengeance_par_les_jeux_du_cirque.webp"
+                                     alt="Logo du projet 'Maximus, la vengeance par les jeux du cirque' de Rémi Vivant"
+                                     x-on:click="Image = !Image;">
+                                <figcaption class="liste_ap__texte"
+                                            x-show="Image">« Maximus, la vengeance par les jeux du cirque » <br> Rémi Vivant</figcaption>
                             </figure>
                         </a>
                     </div>
 
-                    <div class="liste_ap__items">
+                    <div class="liste_ap__items" x-data="{Image: false}">
                         <a href="#">
                             <figure class="liste_ap__figure">
-                                <img class="liste_ap__img" src="public/img/autres_projets/hommes_et_nature.webp" alt="Logo du projet 'Hommes et nature' de Marie Blanc">
-                                <figcaption class="liste_ap__texte">« Hommes et nature » <br> Marie Blanc</figcaption>
+                                <img class="liste_ap__img" 
+                                     src="public/img/autres_projets/hommes_et_nature.webp"
+                                     alt="Logo du projet 'Hommes et nature' de Marie Blanc"
+                                     x-on:click="Image = !Image;">
+                                <figcaption class="liste_ap__texte"
+                                            x-show="Image">
+                                        « Hommes et nature » <br> Marie Blanc</figcaption>
                             </figure>
                         </a>
                     </div>
 
-                    <div class="liste_ap__items">
+                    <div class="liste_ap__items" x-data="{Image: false}">
                         <a href="#">
                             <figure class="liste_ap__figure">
-                                <img class="liste_ap__img" src="public/img/autres_projets/adventuria.webp" alt="Logo du projet 'Adventuria' de Emilien Poulet">
-                                <figcaption class="liste_ap__texte">« Adventuria » <br> Emilien Poulet</figcaption>
+                                <img class="liste_ap__img" 
+                                     src="public/img/autres_projets/adventuria.webp"
+                                     alt="Logo du projet 'Adventuria' de Emilien Poulet"
+                                     x-on:click="Image = !Image;"></figcaption>
+                                <figcaption class="liste_ap__texte"
+                                            x-show="Image">
+                                        « Adventuria » <br> Emilien Poulet</figcaption>
                             </figure>
                         </a>
                     </div>
                 </li>
                 
                 <li>
-                    <div class="liste_ap__items">
+                    <div class="liste_ap__items" x-data="{Image: false}">
                         <a href="#">
                             <figure class="liste_ap__figure">
-                                <img class="liste_ap__img" src="public/img/autres_projets/l_esclavage_noirs_aux_etats-unis.webp" alt="Logo du projet 'L'esclavage noirs aux &Eacute;tats-Unis' de Léo Blondin">
-                                <figcaption class="liste_ap__texte">« L’esclavage noirs aux États-Unis » <br> Léo Blondin</figcaption>
+                                <img class="liste_ap__img" 
+                                     src="public/img/autres_projets/l_esclavage_noirs_aux_etats-unis.webp"
+                                     alt="Logo du projet 'L'esclavage noirs aux &Eacute;tats-Unis' de Léo Blondin"
+                                     x-on:click="Image = !Image;">
+                                <figcaption class="liste_ap__texte"
+                                            x-show="Image">
+                                    « L’esclavage noirs aux États-Unis » <br> Léo Blondin</figcaption>
                             </figure>
                         </a>
                     </div>
     
-                    <div class="liste_ap__items">
+                    <div class="liste_ap__items" x-data="{Image: false}">
                         <a href="#">
                             <figure class="liste_ap__figure">
-                                <img class="liste_ap__img" src="public/img/autres_projets/alice_entre_reve_et_folie.webp" alt="Logo du projet 'Alice : Entre rêve et folie' de Adrien Gaborit">
-                                <figcaption class="liste_ap__texte">« Alice : Entre rêve et folie » <br> Adrien Gaborit</figcaption>
+                                <img class="liste_ap__img" 
+                                     src="public/img/autres_projets/alice_entre_reve_et_folie.webp"
+                                     alt="Logo du projet 'Alice : Entre rêve et folie' de Adrien Gaborit"
+                                     x-on:click="Image = !Image;">
+                                <figcaption class="liste_ap__texte"
+                                            x-show="Image">
+                                    « Alice : Entre rêve et folie » <br> Adrien Gaborit</figcaption>
                             </figure>
                         </a>
                     </div>
     
-                    <div class="liste_ap__items">
+                    <div class="liste_ap__items" x-data="{Image: false}">
                         <a href="#">
                             <figure class="liste_ap__figure">
-                                <img class="liste_ap__img" src="public/img/autres_projets/toujours_plus.webp" alt="Logo du projet 'Toujours plus.' de Baptiste Vivot">
-                                <figcaption class="liste_ap__texte">« Toujours plus. » <br> Baptiste Vivot</figcaption>
+                                <img class="liste_ap__img" 
+                                     src="public/img/autres_projets/toujours_plus.webp"
+                                     alt="Logo du projet 'Toujours plus.' de Baptiste Vivot"
+                                     x-on:click="Image = !Image;">
+                                <figcaption class="liste_ap__texte"
+                                            x-show="Image">
+                                    « Toujours plus. » <br> Baptiste Vivot</figcaption>
                             </figure>
                         </a>
                     </div>
