@@ -1,0 +1,26 @@
+.carrouselF{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+	row-gap: 0px;
+	column-gap: 0px;
+	grid-auto-rows: minmax(393px, auto);
+    grid-column: 2;
+	grid-row: 2;
+	width: 85%;
+    margin: auto auto;
+    position: relative;
+	overflow: hidden;
+}
+
+.imagesF{
+    width: 393px;
+	height: auto;
+	left:0;
+}
+
+.imageF{
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 0;
+}

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="src/js/fonctions.js"></script>
     <title>Destins d'Iran - Persepolis</title>
 </head>
 <body>
@@ -86,11 +88,16 @@
         <div>
             <h2>Films assciés</h2>
 
-            <div>
-                <img src="public/img/carousel/film-argo.webp" alt="Poster du film 'Argo'">
-                <img src="public/img/carousel/film-une_femme_iranienne.webp" alt="Poster du film 'Une Femme iranienne'">
-                <img src="public/img/carousel/film-les_enfants_de_belle_ville.webp" alt="Poster du film 'Les Enfants de Belles Villes'">
-                <img src="public/img/carousel/film-taxi_thehran.webp" alt="Poster du film 'Taxie Theheran'">
+            <div class="carrouselF">
+                <div class="imagesF">
+                    <img id="img1F" class="imageF" src="public/img/carrousel/film-argo.webp" alt="Poster du film 'Argo'">
+                    <img id="img2F" class="imageF" src="public/img/carrousel/film-une_femme_iranienne.webp" alt="Poster du film 'Une Femme iranienne'">
+                    <img id="img3F" class="imageF" src="public/img/carrousel/film-les_enfants_de_belle_ville.webp" alt="Poster du film 'Les Enfants de Belles Villes'">
+                    <img id="img4F" class="imageF" src="public/img/carrousel/film-taxi_thehran.webp" alt="Poster du film 'Taxie Theheran'">
+                </div>
+                <script>        
+                    carrouselF();       
+                </script>
             </div>
         </div>
     </main>
